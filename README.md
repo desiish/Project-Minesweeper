@@ -7,10 +7,14 @@
 The user wins if all mines are marked and loses if any mine is opened.
 
 **Functionality:**
-1. The user must choose valid size of the matrix field (from 3 to 10) and valid number of mines (from 1 to 3*size of the field) to be hidden in order to start playing. If the data is not valid, then the user is asked to enter it again;
+1. The user must choose valid size of the matrix field (from 3 to 10) and valid number of mines (from 1 to 3*size of the field) to be hidden in order to start playing. If the data is not valid, then the user will be asked to enter it again;
 2. Then the user should type a valid command and coordinates of a cell form the field. Again, if any of the given data is invalid, the user will be asked to enter it again.
-3. 
-* *Note:* Valid commands are:
+ 
+<sub>*Note:</sub> Valid commands are:
  - **_open_** (If there is a mine there - game over);
  - **_mark_** (Marks the cell as a ‘mine’);
  - **_unmark_** (Unmarks the cell so it is not marked as a ‘mine’ anymore).
+
+3. If the user steps on a mine, he automatically loses the game.
+4. If the user has already marked all mines and opened all of the other cells, he wins the game.
+
