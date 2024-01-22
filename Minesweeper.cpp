@@ -53,8 +53,8 @@ void CreateMines(char field[N][N], size_t size, unsigned numOfMines)
 	srand(time(0));
 	for (int i = 1; i <= numOfMines; i++) 
 	{
-		int Xcoordinate = rand() % 10;
-		int Ycoordinate = rand() % 10;
+		int Xcoordinate = rand() % size;
+		int Ycoordinate = rand() % size;
 		GetValidCoordinatesOfMine(Xcoordinate, Ycoordinate, size);
 		if (isMarked(field[Xcoordinate][Ycoordinate])) 
 		{
@@ -276,7 +276,7 @@ void PlayGame(char RevealedField[N][N], const char field[N][N], size_t size, uns
 }
 void PrintRules() 
 {
-	std::cout << "~~~~~~~Mineweeper~~~~~~~" << std::endl;
+	std::cout << "~~~~~~~Minesweeper~~~~~~~" << std::endl;
 	std::cout << "RULES OF THE GAME:" << std::endl;
 	std::cout << "1. Choose valid size of the field (from 3 to 10) and valid\nnumber of mines (from 1 to 3*size of the field) to start playing;" << std::endl;
 	std::cout << "2. Choose valid command and coordinates of a cell form the field." << std::endl;
