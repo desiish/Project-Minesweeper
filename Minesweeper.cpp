@@ -7,7 +7,7 @@
 *
 * @author Desislava Shunina
 * @idnumber 6MI0600163
-* @compiler GCC
+* @compiler VC
 *
 * <file with the game>
 *
